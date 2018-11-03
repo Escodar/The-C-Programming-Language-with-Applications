@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+     int a[250], search, c, n;
+
+     printf("Please enter number of elements\n");
+
+     scanf("%d",&n);
+
+ 
+
+     printf("Enter the elements one by one\n", n);
+
+     for (c = 0; c < n; c++)
+
+     {
+
+          scanf("%d", &a[c]);
+
+     }
+
+ 
+
+     printf("Enter the element to be searched\n");
+
+     scanf("%d", &search);
+
+ 
+
+     for (c = 0; c < n; c++)
+
+     {
+
+           if (a[c] == search)   
+
+           {
+
+                printf("%d is found at the location %d.\n", search, c+1);
+
+                break;
+
+           }
+
+     }
+
+     if (c == n)
+
+          printf("Element %d is not found in the list.\n", search);
+
+ 
+
+     return 0;
+
+}
